@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.card {
+    max-width: 320px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mob {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.description {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.name {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 7px;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+.description p {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dprice {
+    display: inline;
+    font-weight: 700;
+    font-size: large;
+    color: hsl(158, 36%, 37%);
+}
+
+.aprice {
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: xx-small;
+    font-weight: 700;
+}
+
+@media (min-width: 800px) {
+
+  .card {
+    max-width: 600px;
+    display: flex;
+  }
+
+  picture {
+    flex: 1;
+  }
+
+  picture img {
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 10px 0 0 10px;
+  }
+
+  .description {
+    flex: 1;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 42%, 18%);
+    transition: 0.3s ease;
+  }
+}
